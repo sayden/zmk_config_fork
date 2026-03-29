@@ -16,31 +16,31 @@
             compatible = "zmk,behavior-macro";
             label = "MACRO_ACUTE_A";
             #binding-cells = <0>;
-            bindings = <&kp RALT A>;
+            bindings = <&kp RALT>, <&kp A>;
         };
         macro_acute_e: macro_acute_e {
             compatible = "zmk,behavior-macro";
             label = "MACRO_ACUTE_E";
             #binding-cells = <0>;
-            bindings = <&kp RALT E>;
+            bindings = <&kp RALT>, <&kp E>;
         };
         macro_acute_i: macro_acute_i {
             compatible = "zmk,behavior-macro";
             label = "MACRO_ACUTE_I";
             #binding-cells = <0>;
-            bindings = <&kp RALT I>;
+            bindings = <&kp RALT>, <&kp I>;
         };
         macro_acute_o: macro_acute_o {
             compatible = "zmk,behavior-macro";
             label = "MACRO_ACUTE_O";
             #binding-cells = <0>;
-            bindings = <&kp RALT O>;
+            bindings = <&kp RALT>, <&kp O>;
         };
         macro_acute_u: macro_acute_u {
             compatible = "zmk,behavior-macro";
             label = "MACRO_ACUTE_U";
             #binding-cells = <0>;
-            bindings = <&kp RALT U>;
+            bindings = <&kp RALT>, <&kp U>;
         };
     };
 
@@ -109,10 +109,10 @@
    &kp ESC     &kp F1          &kp F2        &kp F3          &kp F4            &kp F5                                                  &kp F6    &kp F7          &kp F8          &kp F9          &kp F10       &trans
    &trans       &trans           &trans         &macro_acute_e  &kp LBKT          &kp RBKT    &kp F11                          &kp F12    &trans     &macro_acute_u  &macro_acute_i  &macro_acute_o  &trans         &trans
    &trans       &macro_acute_a  &kp C_VOL_DN  &kp C_VOL_UP    &kp C_PLAY_PAUSE  &trans       &sys_reset                       &trans      &kp LEFT  &kp DOWN        &kp UP          &kp RIGHT       &trans         &trans
-   &trans  &kp ESC   &kp LGUI &kp LPAR &kp RPAR &kp TILDE &trans &trans &trans &trans &kp END   &kp PG_DN &kp LEFT  &kp DOWN &kp RIGHT &kp RET
+   &trans       &trans         &kp LGUI       &kp LPAR      &kp RPAR &kp TILDE &trans &trans &trans &trans &kp END   &kp PG_DN &kp LEFT  &kp DOWN &kp RIGHT &kp RET
    &trans       &trans           &trans         &trans           &trans             &trans   &kp DEL      &trans             &trans    &trans   &trans     &trans           &trans           &trans
            >;
         };
     };
 };
-//&trans  &kp ESC   &kp LGUI &kp LPAR &kp RPAR &kp TILDE &trans &trans &trans &trans &kp END   &kp PG_DN &kp LEFT  &kp DOWN &kp RIGHT &kp RET
+// &trans       &trans           &trans         &trans           &LPAR             &RPAR   &kp PAGE_UP  &kp PAGE_DOWN     &trans    &trans   &trans     &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4  &bt BT_CLR
