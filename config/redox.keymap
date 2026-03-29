@@ -26,7 +26,7 @@
         };
         macro_acute_e: macro_acute_i {
             compatible = "zmk,behavior-macro";
-            label = "MACRO_ACUTE_E";
+            label = "MACRO_ACUTE_I";
             #binding-cells = <0>;
             bindings = <&macro_unicode U00ED>;
         };
