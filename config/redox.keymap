@@ -24,19 +24,19 @@
             #binding-cells = <0>;
             bindings = <&kp RALT E>;
         };
-        macro_acute_e: macro_acute_i {
+        macro_acute_i: macro_acute_i {
             compatible = "zmk,behavior-macro";
             label = "MACRO_ACUTE_I";
             #binding-cells = <0>;
             bindings = <&kp RALT I>;
         };
-        macro_acute_e: macro_acute_o {
+        macro_acute_o: macro_acute_o {
             compatible = "zmk,behavior-macro";
             label = "MACRO_ACUTE_O";
             #binding-cells = <0>;
             bindings = <&kp RALT O>;
         };
-        macro_acute_e: macro_acute_u {
+        macro_acute_u: macro_acute_u {
             compatible = "zmk,behavior-macro";
             label = "MACRO_ACUTE_U";
             #binding-cells = <0>;
