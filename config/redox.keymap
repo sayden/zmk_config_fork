@@ -16,7 +16,7 @@
             compatible = "zmk,behavior-macro";
             label = "MACRO_ACUTE_A";
             #binding-cells = <0>;
-            bindings = <&macro_unicode U00E1>;
+            bindings = <&kp RALT A>;
         };
         macro_acute_e: macro_acute_e {
             compatible = "zmk,behavior-macro";
