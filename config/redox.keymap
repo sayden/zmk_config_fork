@@ -67,15 +67,15 @@
         adjust_layer {
 // --------------------------------------------------------------------------------------------------------------------------------------------------
 // |       |       F1       |    F2       |    F3       |     F4  |  F5     |                  ---                | F6      |   F7     |  F8  |  F9      | F10    |     |
-// |       | Bluetooth next | BT Previous |  BT CLEAR   |     [   |  ]      |   F11    |       ---        |  F12  | BT1     |   BT2    |  BT3 |  BT4     | BT5    |     |
+// |       | Bluetooth next |             |     [       |     ]   |         |   F11    |       ---        |  F12  |         |   LBRC   | RBRC |  BT4     | BT5    |     |
 // |       |    Pause       |  Vol Dn     |  Vol Up     |     (   |  )      |  RESET   |       ---        |       | LEFT    |   DOWN   |  UP  | RIGHT    |        |     |
 // |       |                |             |             |         |         |          |     | --- |      |       |         |          |      |          |        |     |
 // |       |                |             |             |                   |          | DEL | --- |      |       |                    |      |          |        |     |
                   bindings = <
-   &trans   &kp F1    &kp F2        &kp F3        &kp F4    &kp F5                                          &kp F6     &kp F7    &kp F8  &kp F9     &kp F10 &trans
-   &trans   &trans    &trans        &trans        &kp LBKT  &kp RBKT  &kp F11                       &kp F12 &trans  &kp LBRC  &kp RBRC    &trans     &trans  &trans
-   &trans   &trans    &kp C_VOL_DN  &kp C_VOL_UP  &kp LPAR  &kp RPAR  &sys_reset                    &trans  &kp LEFT   &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
-   &trans   &trans    &trans        &trans        &kp LBRC  &kp RBRC  &trans    &kp K_MUTE  &trans  &trans  &trans    &trans    &trans  &trans     &trans  &trans
+   &trans   &kp F1    &kp F2        &kp F3        &kp F4    &kp F5                                          &kp F6     &kp F7    &kp F8   &kp F9     &kp F10 &trans
+   &trans   &trans    &trans        &kp LBKT      &kp RBKT  &trans  &kp F11                       &kp F12   &trans     &kp LBRC  &kp RBRC &trans     &trans  &trans
+   &trans   &trans    &kp C_VOL_DN  &kp C_VOL_UP  &kp LPAR  &kp RPAR  &sys_reset                    &trans  &kp LEFT   &kp DOWN  &kp UP   &kp RIGHT  &trans  &trans
+   &trans   &trans    &trans        &trans        &kp LBRC  &kp RBRC  &trans    &kp K_MUTE  &trans  &trans  &trans     &kp LBKT  &kp RBKT &trans     &trans  &trans
    &trans   &trans    &trans        &trans        &trans              &trans         &kp DEL        &trans  &trans  &trans    &bt BT_PRV    &kp PAGE_DOWN  &kp PAGE_UP     &bt BT_NXT
            >;
         };
